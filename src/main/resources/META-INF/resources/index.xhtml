@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+
+<h:head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Main Page</title>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="resources/img/ugds-fav.png" type="image/x-icon"/>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <!-- FontAwesome CSS -->
+    <h:outputStylesheet library="css" name="bootstrap.min.css"/>
+    <!-- Custom CSS -->
+    <h:outputStylesheet library="css" name="style.css"/>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin-ext" rel="stylesheet"/>
+</h:head>
+
+<h:body>
+
+    <div id="content">
+        <div class="container-fluid">
+
+            Hello world. #{msg.login_sifre} #{msg.login_kullaniciAd}
+
+            <p:dataTable >
+
+                <p:column />
+                <p:column />
+                <p:column />
+                <p:column />
+            </p:dataTable>
+
+        </div>
+    </div>
+
+    <ui:include src="bottombar.xhtml"></ui:include>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <h:outputScript name="bootstrap/js/bootstrap.min.js"/>
+</h:body>
+</html>
